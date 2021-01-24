@@ -79,15 +79,15 @@ highway=*
 { add mkgmap:unpaved=1 }
 
 # Convert generic path to most specific
-highway=footway & snowplowing!=no
-& (bicycle=yes|bicycle=designated|bicycle=permissive|bicycle=official)
+highway=footway & (bicycle=yes|bicycle=designated|bicycle=permissive|bicycle=official)
 {set highway=cycleway; set bicycle=yes}
-highway=path & snowplowing!=no
-& (bicycle=designated|bicycle=permissive|bicycle=official)
+highway=footway & (bicycle!=no)
+{set highway=path}
+highway=path & (bicycle=designated|bicycle=permissive|bicycle=official)
 {set highway=cycleway; set bicycle=yes}
 highway=path & (horse=designated|horse=permissive|horse=official)
 {set highway=bridleway; set horse=yes}
-highway=path
+highway=path & (bicycle=no|access=no|bicycle=private|access=private)
 {set highway=footway}
 
 leisure=track & area!=yes
@@ -160,17 +160,18 @@ highway=bridleway [0x07 road_class=0 road_speed=0 resolution 23]
 highway=byway [0x16 road_class=0 road_speed=0 resolution 23]
 
 highway=service & service=parking_aisle
-[0x07 road_class=0 road_speed=1 resolution 24]
+[0x06 road_class=0 road_speed=1 resolution 24]
 highway=service & (service=alley|service=driveway)
-[0x07 road_class=0 road_speed=0 resolution 23]
-highway=service [0x0a resolution 22-22 continue]
-highway=service [0x07 road_class=0 road_speed=2 resolution 23]
+[0x06 road_class=0 road_speed=0 resolution 23]
+highway=service [0x06 resolution 22-22 continue]
+highway=service [0x06 road_class=0 road_speed=2 resolution 23]
 
-highway=cycleway [0x0a resolution 22-22 continue]
-highway=cycleway [0x07 road_class=0 road_speed=1 resolution 23]
+highway=cycleway [0x010000 resolution 22]
+
 
 (highway=footway|highway=path) & tracktype~'grade[1-2]' {add access = no; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 22]
-highway=footway|highway=path [0x16 road_class=0 road_speed=0 resolution 23]
+highway=path [0x16 road_class=0 road_speed=0 resolution 23]
+highway=footway [0x07 road_class=0 road_speed=0 resolution 23]
 highway=steps [0x13 road_class=0 road_speed=0 resolution 23]
 
 highway=track & tracktype=grade1 [0x0a resolution 21-21 continue]

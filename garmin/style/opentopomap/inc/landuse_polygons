@@ -3,6 +3,7 @@
 #landuse=construction [0x0c resolution 21]
 #landuse=farm [0x4e resolution 20]
 #landuse=farmyard [0x4e resolution 22]
+landuse=farmland [0x3a resolution 22]
 
 
 #landuse=quarry [0x0c resolution 19]
@@ -19,8 +20,6 @@
 
 
 
-(landuse=forest|landuse=wood|natural=wood) & (wood=coniferous)[0x38 resolution 15]
-(landuse=forest|landuse=wood|natural=wood) & (wood=deciduous)[0x39 resolution 15]
 (landuse=forest|landuse=wood|natural=wood) [0x50 resolution 15]
 natural=scrub [0x4f resolution 20]
 #landuse=residential|landuse=industrial|landuse=commercial [0x10 resolution 19-23]
@@ -29,6 +28,6 @@ landuse=cemetery|landuse=cemetary|amenity=grave_yard [0x1a resolution 21]
 
 #landuse=greenfield [0x17 resolution 20]
 landuse=meadow [0x17 resolution 19]
-landuse=grass | landuse=greenfield [0x17 resolution 23]
+landuse=grass | landuse=greenfield | natural=grassland [0x17 resolution 21]
 landuse=vineyard [0x4e resolution 20]
 landuse=military [0x04 resolution 19]
