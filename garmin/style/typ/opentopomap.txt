@@ -12,10 +12,6 @@ Type=0x4b,0
 			;background
 Type=0x10,1
 			;built-up area
-Type=0x38,2
-			;conifer forest
-Type=0x39,2
-			;broad-leaved forest
 Type=0x50,2
 			;mixed forest
 Type=0x55,3
@@ -101,459 +97,9 @@ Type=0x04,6
 ;"  ##  "
 ;[end]
 
-[_point]
-Type=0x2b06
-String=0x02,Schutzhütte
-String=0x04,shelter
-String=0x07,Skydd
-DayXpm="9 8 5 1"
-" 	c None"
-".	c #FFFFFF"
-"+	c #000000"
-"@	c #1F1F1F"
-"#	c #3F3F3F"
-"    .    "
-"   .+.   "
-"  .+.+.  "
-" .+...+. "
-".@#...#@."
-" .+...+. "
-" .+...+. "
-"  .   .  "
-[end]
-
-[_point]
-Type=0x2b07
-String=0x02,Hütte
-String=0x04,hut
-String=0x07,Hydda
-DayXpm="9 9 5 1"
-" 	c None"
-".	c #FFFFFF"
-"+	c #000000"
-"@	c #1F1F1F"
-"#	c #3F3F3F"
-"    .    "
-"   .+.   "
-"  .+.+.  "
-" .+...+. "
-".@#...#@."
-" .+...+. "
-" .+...+. "
-" .+++++. "
-" ....... "
-[end]
-
-
-[_point]
-Type=0x2c0b
-String=0x02,Kirche
-String=0x04,church
-String=0x07,Kyrka
-DayXpm="9 20 4 1"
-" 	c none"
-"#	c #000000"
-"+	c #707C7C"
-".	c #FFFFFF"
-"         "
-"    .    "
-"   .#.   "
-"  ..#..  "
-" .#####. "
-"  ..#..  "
-"   .#.   "
-"  .#+#.  "
-" .#...#. "
-".#.....#."
-".#.....#."
-".#.....#."
-" .#...#. "
-"  .###.  "
-"   ...   "
-"         "
-"         "
-"         "
-"         "
-"         "
-[end]
-
-[_point]
-Type=0x2c0d
-String=0x02,Schloss
-String=0x04,castle
-String=0x07,Slott
-DayXpm="8 16 5 1"
-" 	c none"
-"#	c #000000"
-"+	c #6B6D6C"
-"@	c #9FA6A5"
-".	c #FFFFFF"
-"  ...   "
-"  .#+@. "
-"  .###+."
-"  .#+@. "
-"  .#.   "
-"  .#.   "
-"...#... "
-".#####. "
-".#####. "
-".#####. "
-".#####. "
-"....... "
-"        "
-"        "
-"        "
-"        "
-[end]
-
-[_point]
-Type=0x2d09
-String=0x02,Badestelle
-String=0x04,swimming
-String=0x07,Badplats
-DayXpm="11 6 5 1"
-" 	c none"
-".	c #FFFFFF"
-"+	c #727272"
-"@	c #8D8D8D"
-"#	c #000000"
-" ..     .. "
-".+@.   .@+."
-" .#.....#. "
-" .@#####@. "
-"  .#####.  "
-"   .....   "
-[end]
-
-[_point]
-Type=0x2e02
-String=0x02,Supermarkt
-String=0x04,supermarket
-String=0x07,Matbutik
-DayXpm="16 16 18 1"
-" 	c None"
-".	c #FFFFFF"
-"+	c #000000"
-"@	c #F8F048"
-"#	c #F8F848"
-"$	c #F8F040"
-"%	c #F8E830"
-"&	c #F8E028"
-"*	c #F8E020"
-"=	c #F8D820"
-"-	c #F8D818"
-";	c #F8F850"
-">	c #F8F038"
-",	c #F8E838"
-"'	c #F8D810"
-")	c #F8D010"
-"!	c #F8E018"
-"~	c #F8D008"
-"  ............  "
-" .++++++++++++. "
-".+@#$$%%&*==--+."
-".+#;#$>%&**++-+."
-".+##@$,%&*=+--+."
-".+$+++++++++-'+."
-".+>+,+%+&+-+--+."
-".+%+%+&+*+=+-'+."
-".+&+&+*+*+-+-)+."
-".+&&++++++++')+."
-".+***=*=---+)'+."
-".+=++++++++++)+."
-".+!++-----)++~+."
-".+------')'))~+."
-" .++++++++++++. "
-"  ............  "
-[end]
-
-[_point]
-Type=0x2e05
-String=0x02,Apotheke
-String=0x04,pharmacy
-String=0x07,Apotek
-DayXpm="11 12 38 1"
-" 	c None"
-".	c #FFFFFF"
-"+	c #EB6874"
-"@	c #EF848E"
-"#	c #E95462"
-"$	c #DF0B1F"
-"%	c #DF091D"
-"&	c #E42F40"
-"*	c #EC6A77"
-"=	c #E01427"
-"-	c #EB6470"
-";	c #E63B4B"
-">	c #E53647"
-",	c #EA5B68"
-"'	c #EA5E6B"
-")	c #F8CCD1"
-"!	c #F7C7CC"
-"~	c #E84D5C"
-"{	c #E1192C"
-"]	c #E01225"
-"^	c #F9D4D8"
-"/	c #EB626F"
-"(	c #E00D21"
-"_	c #E74A58"
-":	c #E53748"
-"<	c #E53344"
-"[	c #E8505F"
-"}	c #E32436"
-"|	c #E11A2D"
-"1	c #E32839"
-"2	c #E21E30"
-"3	c #F1969E"
-"4	c #F29DA5"
-"5	c #E00F22"
-"6	c #DF0C20"
-"7	c #F8CBCF"
-"8	c #F08C96"
-"9	c #EF818B"
-"     ..    "
-"   ..+@.   "
-"  .#$%%&.  "
-"  .%%*=%-. "
-"  .;>.,%-. "
-" .')!~{%-. "
-" .]^/(%%-. "
-" ._:<[}%/. "
-" .|12.,%(3."
-".=%%;.4567."
-" .89. ..3. "
-"  ..    .  "
-[end]
-
-[_point]
-Type=0x2e06
-String=0x02,Kiosk
-String=0x04,convenience
-String=0x07,Kiosk
-DayXpm="16 16 18 1"
-" 	c None"
-".	c #FFFFFF"
-"+	c #000000"
-"@	c #F8F048"
-"#	c #F8F848"
-"$	c #F8F040"
-"%	c #F8E830"
-"&	c #F8E028"
-"*	c #F8E020"
-"=	c #F8D820"
-"-	c #F8D818"
-";	c #F8F850"
-">	c #F8F038"
-",	c #F8E838"
-"'	c #F8D810"
-")	c #F8D010"
-"!	c #F8E018"
-"~	c #F8D008"
-"  ............  "
-" .++++++++++++. "
-".+@#$$%%&*==--+."
-".+#;#$>%&**++-+."
-".+##@$,%&*=+--+."
-".+$+++++++++-'+."
-".+>+,+%+&+-+--+."
-".+%+%+&+*+=+-'+."
-".+&+&+*+*+-+-)+."
-".+&&++++++++')+."
-".+***=*=---+)'+."
-".+=++++++++++)+."
-".+!++-----)++~+."
-".+------')'))~+."
-" .++++++++++++. "
-"  ............  "
-[end]
-
-
-[_point]
-Type=0x2f06
-String=0x02,Bank
-String=0x04,bank
-String=0x07,Bank
-DayXpm="9 11 17 1"
-" 	c None"
-".	c #000000"
-"+	c #0F110D"
-"@	c #181917"
-"#	c #222421"
-"$	c #30312F"
-"%	c #656764"
-"&	c #979996"
-"*	c #A0A29F"
-"=	c #A8AAA7"
-"-	c #B1B3AF"
-";	c #B9BBB8"
-">	c #BABCB9"
-",	c #D8DAD6"
-"'	c #EEF0ED"
-")	c #F8FAF7"
-"!	c #FFFFFF"
-"   !!!!! "
-"  !=#.@&!"
-" !=@;),%!"
-" )$-!!!! "
-"!@....#) "
-" '+'!!!  "
-"!@...#)  "
-" )$-!!!! "
-" !=@>),%!"
-"  !*#.@& "
-"   !!!!  "
-[end]
-
-[_point]
-Type=0x2f0b
-String=0x02,Parkplatz
-String=0x04,parking
-String=0x07,Parkering
-DayXpm="11 11 8 1"
-" 	c none"
-"#	c #1600FF"
-"+	c #1824F7"
-"'	c #464DFF"
-",	c #BABAFF"
-"o	c #BEC5F5"
-"^	c #EEF3F6"
-".	c #FEFFFC"
-" ......... "
-".#########."
-".##....,+#."
-".##..#'.o#."
-".##..##.^#."
-".##..#'.o#."
-".##....,+#."
-".##..#####."
-".##..#####."
-".#########."
-" ......... "
-[end]
-
-[_point]
-Type=0x2f0c
-String=0x02,Toilette
-String=0x04,restroom
-String=0x07,Toalett
-DayXpm="16 16 32 1"
-" 	c None"
-".	c #FFFFFF"
-"+	c #000000"
-"@	c #4060F0"
-"#	c #4060F8"
-"$	c #4058F0"
-"%	c #3858F0"
-"&	c #3048E8"
-"*	c #3040E0"
-"=	c #2038D8"
-"-	c #2838D0"
-";	c #2030D0"
-">	c #1828D0"
-",	c #1820C8"
-"'	c #4860F8"
-")	c #4868F8"
-"!	c #F8F8F8"
-"~	c #3850E8"
-"{	c #2838D8"
-"]	c #2028C8"
-"^	c #1828C8"
-"/	c #3848E8"
-"(	c #2840D8"
-"_	c #2830D0"
-":	c #3048E0"
-"<	c #1020C0"
-"[	c #2030D8"
-"}	c #2028D0"
-"|	c #1018C0"
-"1	c #1020C8"
-"2	c #1820C0"
-"3	c #0810B8"
-"  ............  "
-" .++++++++++++. "
-".+@#$%&*=-;;>,+."
-".+')!!~*{;!!]^+."
-".+#'!!/({=!!>,+."
-".+$$%~&*=_;;^,+."
-".+!!!!!!{!!!!^+."
-".+!:!!{!!;!!,!+."
-".+!{!!{!;;!!^<+."
-".+!{!![!;!!!!,+."
-".+;;!!;;!!!!!!+."
-".+;}!!}^^,!!<|+."
-".+}^!!^^,<!!||+."
-".+^^,^,,12|||3+."
-" .++++++++++++. "
-"  ............  "
-[end]
-
-
-
-[_point]
-Type=0x3002
-String=0x02,Arzt/Krankenhaus
-String=0x04,doctor/hospital
-String=0x07,Sjukhus
-DayXpm="10 10 3 1"
-"  c none"
-"1 c #f0ffff"
-"2 c #df091d"
-"   1111   "
-"   1221   "
-"   1221   "
-"1111221111"
-"1222222221"
-"1222222221"
-"1111221111"
-"   1221   "
-"   1221   "
-"   1111   "
-[end]
-
-
-[_point]
-Type=0x6411
-String=0x02,Turm
-String=0x04,tower
-String=0x07,Torn
-DayXpm="9 18 14 1"
-"  c none"
-"1 c #f0f8f8"
-"2 c #f7f7f7"
-"3 c #101818"
-"4 c #111111"
-"5 c #e0efef"
-"6 c #141414"
-"7 c #f0f0f0"
-"8 c #1c1c1c"
-"9 c #707c7c"
-": c #202020"
-"; c #f0fbfb"
-"< c #ffffff"
-"= c #101919"
-"         "
-"    1    "
-"   232   "
-"   242   "
-"   242   "
-"   242   "
-"   565   "
-"  78987  "
-" 7:7;7:7 "
-"235<<<532"
-"242<<<242"
-"235<<<532"
-" 7:525:7 "
-"  7=4=7  "
-"   222   "
-"         "
-"         "
-"         "
-[end]
 
 [_point]
 Type=0x6414
-String=0x02,Trinkwasser
 String=0x04,drinking water
 String=0x07,Dricksvatten
 DayXpm="13 14 16 1"
@@ -591,7 +137,6 @@ DayXpm="13 14 16 1"
 
 [_point]
 Type=0x660f
-String=0x02,Pfosten/Barriere
 String=0x04,barrier
 String=0x07,Barriär
 DayXpm="7 7 3 1"
@@ -607,47 +152,6 @@ DayXpm="7 7 3 1"
 "   .   "
 [end]
 
-
-[_point]
-Type=0x6619
-String=0x02,Höhle
-String=0x04,cave
-String=0x07,Grotta
-DayXpm="8 8 24 1"
-" 	c None"
-".	c #FFFFFF"
-"+	c #F1F1F1"
-"@	c #969696"
-"#	c #949494"
-"$	c #F0F0F0"
-"%	c #000000"
-"&	c #4E4E4E"
-"*	c #161616"
-"=	c #EEEEEE"
-"-	c #989898"
-";	c #585858"
-">	c #D7D7D7"
-",	c #787878"
-"'	c #4D4D4D"
-")	c #D4D4D4"
-"!	c #575757"
-"~	c #4B4B4B"
-"{	c #A2A2A2"
-"]	c #CECECE"
-"^	c #040404"
-"/	c #EBEBEB"
-"(	c #A4A4A4"
-"_	c #6E6E6E"
-"   ..   "
-"  +@#$  "
-" .%%&*= "
-" .%-.;> "
-" .%,.') "
-"..%!.~{."
-"]^;/.(_]"
-"...  .. "
-[end]
-
 [_line]
 Type=0x01
 String=0x02,Autobahn
@@ -658,13 +162,12 @@ FontStyle=SmallFont
 LineWidth=2
 BorderWidth=2
 Xpm="0 0 2 0"
-"a c #fdb548"
-"b c #000000"
+"a c #B0B0B0"
+"b c #FFFFFF"
 [end]
 
 [_line]
 Type=0x02
-String=0x02,Schnellstraße
 String=0x04,trunk
 String=0x07,Riksväg
 ExtendedLabels=Y
@@ -672,13 +175,12 @@ FontStyle=SmallFont
 LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
-"a c #fdb548"
-"b c #000000"
+"a c #B0B0B0"
+"b c #FFFFFF"
 [end]
 
 [_line]
 Type=0x03
-String=0x02,Bundesstraße
 String=0x04,primary street
 String=0x07,Huvudgata
 ExtendedLabels=Y
@@ -686,8 +188,8 @@ FontStyle=SmallFont
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"a c #fdb548"
-"b c #000000"
+"a c #B0B0B0"
+"b c #FFFFFF"
 [end]
 
 [_line]
@@ -727,7 +229,7 @@ Xpm="0 0 2 0"
 ;Type=0x007
 ;String=0x07,Väg
 ;UseOrientation=N
-;ExtendedLabels=Y
+;ExtendedLabels=N
 ;FontStyle=SmallFont
 ;LineWidth=3
 ;BorderWidth=0
@@ -738,18 +240,18 @@ Xpm="0 0 2 0"
 
 [_line]
 Type=0x08
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=SmallFont
 LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
-"a c #fdfd4f"
+"a c #f6f8d2"
 "b c #000000"
 [end]
 
 [_line]
 Type=0x09
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=SmallFont
 LineWidth=1
 BorderWidth=1
@@ -773,12 +275,12 @@ Xpm="32 3 2 1"
 
 [_line]
 Type=0x010000
-String=0x07,GC-väg
+String=0x07,Cykelväg
 ExtendedLabels=Y
 FontStyle=SmallFont
 LineWidth=3
 Xpm="0 0 1 0"
-"a c #000082"
+"a c #0000ce"
 [end]
 
 [_line]
@@ -819,7 +321,6 @@ Xpm="0 0 2 0"
 
 [_line]
 Type=0x0d
-String=0x02,Fußgängerzone
 String=0x04,pedestrian zone
 String=0x07,Gågata
 ExtendedLabels=Y
@@ -827,13 +328,12 @@ FontStyle=SmallFont
 LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
-"a c #a0a0a0"
-"b c #000000"
+"a c #B0B0B0"
+"b c #f6f8d2"
 [end]
 
 [_line]
 Type=0x13
-String=0x02,Treppe/Stufen
 String=0x04,steps
 String=0x07,Trappor
 ExtendedLabels=Y

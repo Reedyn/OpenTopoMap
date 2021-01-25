@@ -4,26 +4,18 @@
 # None of operator, brand given
 ref=* & (operator!=* & brand!=*) { name '${ref} ${name}' | '${ref}' }
 
-# Both operator and brand given
-operator=* & brand=* {
- name '${brand}: ${ref} ${name} (${operator})' |
-      '${brand} ${ref} (${operator})' |
-      '${brand}: ${name} (${operator})' |
-      '${brand} (${operator})'
-}
-
 # One of operator or brand given
 operator=* & brand!=* {
- name '${operator}: ${ref} ${name}' |
-      '${operator}: ${name}' |
+ name '${ref} ${name}' |
+      '${name}' |
       '${operator}: ${ref}' |
       '${operator}' |
       '${ref}'
 }
 brand=* & operator!=* {
- name '${brand}: ${ref} ${name}' |
-      '${brand}: ${name}' | 
-      '${brand}: ${ref}' |
+ name '${ref} ${name}' |
+      '${name}' |
+      '${ref}' |
       '${brand}' |
       '${ref}'
 }

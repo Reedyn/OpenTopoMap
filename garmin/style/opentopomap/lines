@@ -174,7 +174,7 @@ highway=path [0x16 road_class=0 road_speed=0 resolution 23]
 highway=footway [0x07 road_class=0 road_speed=0 resolution 23]
 highway=steps [0x13 road_class=0 road_speed=0 resolution 23]
 
-highway=track & tracktype=grade1 [0x0a resolution 21-21 continue]
+highway=track & tracktype=grade1 [0x07 resolution 21-21 continue]
 highway=track & tracktype=grade1 [0x07 road_class=0 road_speed=1 resolution 22]
 highway=track [0x0a road_class=0 road_speed=1 resolution 22]
 highway=unsurfaced [0x0a road_class=0 road_speed=1 resolution 22]

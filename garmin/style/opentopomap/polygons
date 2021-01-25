@@ -8,9 +8,6 @@
 # and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
 # for more information.
 
-leisure=* & sport=* & name=* { set name='${name} (${sport})' }
-leisure=* & sport=* & name!=* { add name='${sport}' }
-
 include 'inc/name';
 
 # buildings tag should be FIRST
