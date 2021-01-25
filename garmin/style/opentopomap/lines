@@ -89,6 +89,12 @@ highway=path & (horse=designated|horse=permissive|horse=official)
 {set highway=bridleway; set horse=yes}
 highway=path & (bicycle=no|access=no|bicycle=private|access=private)
 {set highway=footway}
+highway=track & (bicycle=no|access=no|bicycle=private|access=private)
+{set highway=byway}
+highway=unsurfaced & (bicycle=no|access=no|bicycle=private|access=private)
+{set highway=footway}
+highway=road & (bicycle=no|access=no|bicycle=private|access=private)
+{set highway=footway}
 
 leisure=track & area!=yes
 {add highway=footway; name '${name} (${sport})' | '${name}'}
@@ -146,13 +152,13 @@ highway=tertiary_link [0x08 road_class=1 road_speed=1 resolution 22]
 
 highway=minor [0x06 road_class=1 road_speed=3 resolution 21]
 
-highway=unclassified [0x0a resolution 20-20 continue]
+highway=unclassified [0x06 resolution 20-20 continue]
 highway=unclassified [0x06 resolution 21-21 continue]
 highway=unclassified [0x05 road_class=0 road_speed=3 resolution 22]
 
 # Some countries allow, others disallow bicycling on pedestrian streets.
 # To allow bicycling, add 'add bicycle=yes'
-highway=residential | (highway=pedestrian & area!=yes) | highway=living_street [0x0a resolution 21-21 continue]
+(highway=pedestrian & area!=yes) | highway=living_street [0x06 resolution 21-21 continue]
 highway=pedestrian & area!=yes [0x0d road_class=0 road_speed=0 resolution 22]
 highway=living_street [0x06 road_class=0 road_speed=1 resolution 22]
 highway=residential [0x06 road_class=0 road_speed=2 resolution 22]
@@ -163,36 +169,29 @@ highway=service & service=parking_aisle
 [0x06 road_class=0 road_speed=1 resolution 24]
 highway=service & (service=alley|service=driveway)
 [0x06 road_class=0 road_speed=0 resolution 23]
-highway=service [0x06 resolution 22-22 continue]
 highway=service [0x06 road_class=0 road_speed=2 resolution 23]
 
 highway=cycleway [0x010000 resolution 22]
 
 
-(highway=footway|highway=path) & tracktype~'grade[1-2]' {add access = no; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 22]
-highway=path [0x16 road_class=0 road_speed=0 resolution 23]
+(highway=footway|highway=path) & tracktype~'grade[1-2]' {add access = no; add foot = yes} [0x0E road_class=0 road_speed=0 resolution 23]
+highway=path [0x0E road_class=0 road_speed=0 resolution 23]
 highway=footway [0x07 road_class=0 road_speed=0 resolution 23]
 highway=steps [0x13 road_class=0 road_speed=0 resolution 23]
 
-highway=track & tracktype=grade1 [0x07 resolution 21-21 continue]
 highway=track & tracktype=grade1 [0x07 road_class=0 road_speed=1 resolution 22]
 highway=track [0x0a road_class=0 road_speed=1 resolution 22]
 highway=unsurfaced [0x0a road_class=0 road_speed=1 resolution 22]
 highway=road { add mkgmap:dead-end-check = false} [0x06 road_class=0 road_speed=1 resolution 22]
 
 # Mop up any unrecognised highway types
-highway=* & highway!=proposed & area!=yes [0x07 road_class=0 road_speed=0 resolution 23] 
+highway=* & highway!=proposed & area!=yes [0x07 road_class=0 road_speed=0 resolution 22]
 
 natural=coastline [0x15 resolution 12]
 power=line {delete name} [0x29 resolution 21]
 power=minor_line {delete name} [0x29 resolution 24]
 
-#railway=abandoned [0x0a road_class=0 road_speed=1 resolution 22]
-railway=platform [0x16 road_class=0 road_speed=0 resolution 23]
-(railway=rail | railway=disused | railway=light_rail | railway=monorail | railway=narrow_gauge | railway=subway) & tunnel!=yes [0x2d resolution 19-23 continue]
-(railway=rail | railway=disused | railway=light_rail | railway=monorail | railway=narrow_gauge | railway=subway) & tunnel=yes [0x2e resolution 19-23 continue]
-(railway=rail | railway=disused | railway=light_rail | railway=monorail | railway=narrow_gauge | railway=subway) & tunnel=yes [0x2c resolution 24]
-(railway=rail | railway=disused | railway=light_rail | railway=monorail | railway=narrow_gauge | railway=subway) [0x14 resolution 24]
+(railway=rail | railway=disused | railway=light_rail | railway=monorail | railway=narrow_gauge | railway=subway) [0x2d resolution 19-24]
 
 (man_made=cable|(man_made=* & man_made ~ '.*pipe.*')) & area!=yes &
 tunnel!=yes & location != underground
